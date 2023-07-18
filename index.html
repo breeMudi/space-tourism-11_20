@@ -10,19 +10,34 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
+    <nav>
+      <img src="assets/shared/logo.svg" alt="logo image" />
+      <div class="navbar">
+        <img src="assets/shared/icon-hamburger.svg" alt="menu bar" />
+        <img src="assets/shared/icon-close.svg" alt="close menu bar" />
+      </div>
+    </nav>
     <div class="homepage">
-      <a href="index.html"><button class="home-btn">Home</button></a>
+      <a href="index.html"><button class="home-btn nav-btn">Home</button></a>
       <a href="destination-europa.html"
-        ><button class="dest-btn">Destination</button></a
+        ><button class="dest-btn nav-btn">Destination</button></a
       >
-      <a href="crew-commander.html"><button class="crew-btn">Crew</button></a>
+      <a href="crew-commander.html"
+        ><button class="crew-btn nav-btn">Crew</button></a
+      >
       <a href="technology-capsule.html"
-        ><button class="tech-btn">Technology</button></a
+        ><button class="tech-btn nav-btn">Technology</button></a
       >
       <!-- 00 Home
   01 Destination
