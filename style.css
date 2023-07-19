@@ -1,9 +1,12 @@
 :root {
-    --text-color: #fff;
-    --text-alt-color: #000;
+    --text-color: #D0D6F9;
+    /* --grey-white: #9ea0a3; */
+    --text-alt-color: #0B0D17;
+    --white-color: #fff;
+    
 
     --normal-text-size: 1rem;
-    --medium-text-size: 2rem;
+    --medium-text-size: 2.5rem;
     --big-text-size: 6rem;
 }
 
@@ -11,15 +14,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.different-font {
-    font-family: 'Inconsolata', monospace;
 }
 
 body {
     color: var(--text-color);
+    font-family: 'Barlow Condensed', sans-serif;
     /* border: 2px solid orange; */
     /* height: 100vh; */
 }
@@ -45,6 +44,7 @@ nav > img {
 ul{
     list-style: none;
     position: absolute;
+    display: none;
 }
 
 
@@ -68,11 +68,17 @@ ul{
   .crew {background-image: url(assets/crew/background-crew-mobile.jpg);}
   .technology {background-image: url(assets/technology/background-technology-mobile.jpg);}
 
-/* body */
+/* homepage */
 .homepage {
     height: 100vh;
 }
 
+.homepage > section > .section1 > * {
+    margin-bottom: 9%;
+    /* border: 2px solid red; */
+}
+
+/* body */
 section {
     padding: 1rem 2rem 0rem 2rem;
     display: flex;
@@ -83,26 +89,25 @@ section {
     text-align: center;
 }
 
-section > .section1 > * {
-    margin-bottom: 9%;
-    /* border: 2px solid red; */
-}
 p, blockquote {
     font-size: var(--normal-text-size);
 }
 
 .big-text {
     font-size: clamp(5rem, var(--big-text-size) ,7rem);
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Bellefair', serif;
+    color: var(--white-color);
 }
 
 .medium-text {
     font-size: var(--medium-text-size);
-    font-family: 'Inconsolata', monospace;
+    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'Bellefair', serif;
 }
 
 blockquote {
-    line-height: 2rem;
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.8rem;
 }
 /* EXPLORE  */
 #explore {
@@ -118,9 +123,47 @@ blockquote {
 
 
 /* DESTINATION */
-.destination > section > .section1 > img{
+.destination .section1 > img{
     width: 15rem;
     margin: 2rem auto;
 }
+
+.destination .more {
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    border-top: 1px solid #979797;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.destination .more > div .medium-text {
+   margin-top: 0.5rem;
+   color: var(--white-color);
+}
+
+.destination .section2 .big-text {
+    margin: 1rem auto 0.5rem auto;
+}
+
+.select-destination {
+    display: flex;
+    justify-content: space-between;
+}
+.select-destination a {
+    padding-bottom: 1rem;
+    /* border-bottom: 2px solid var(--white-color); */
+}
+
+.header {
+    color: var(--white-color);
+}
+
+.header span{
+    opacity: 0.4;
+    margin-right: 0.5rem;
+}
+
+/* CREW */
 
 
