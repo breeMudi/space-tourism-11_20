@@ -50,6 +50,8 @@ Various possible steps to achieve this project were outlined after a preliminary
 
 - In terms of the bold texts. A font size range of 26 to 32 will be tested accordingly. Of course, I learnt that its better and more responsive to make use of rem instead of the good 'ol pixels.
 
+- The background image position for all menu pages were set to fixed with a z-index of -1 and a max height of 100 viewport height. This was in order for the foreground information to show and scroll ontop of a fixed background
+
 Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
 1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
