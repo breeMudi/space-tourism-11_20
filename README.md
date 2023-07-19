@@ -40,7 +40,7 @@ Various possible steps to achieve this project were outlined after a preliminary
 
 - A git repo was created and connected directly to this vsCode editor for easy commits
 
-- The various html files will be linked via 'a' tags. Although I think too much HTML files show repeating code, and for this reason, I believe it will be preferable to use Javascript to render the various pages.
+- The various html files will be linked via 'anchor' tags. Although I think too much HTML files portray repeating code, hence for this reason, I believe it will be preferable to use Javascript to render the various pages.
 
 - Nevertheless, we stick with the 'a' tags for now.
 
@@ -48,7 +48,7 @@ Various possible steps to achieve this project were outlined after a preliminary
 
 - The font size is rather tricky, I will like it to change according to screen size. This will be achieved with the css clamp method. For the main body texts, a font size of 16 will do for mobile devices 😏 and this will span to 22 pixels 🤔 I guess for desktop.
 
-- In terms of the bold texts. A font size range of 26 to 32 will be tried
+- In terms of the bold texts. A font size range of 26 to 32 will be tested accordingly. Of course, I learnt that its better and more responsive to make use of rem instead of the good 'ol pixels.
 
 Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 

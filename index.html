@@ -21,38 +21,54 @@
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <nav>
-      <img src="assets/shared/logo.svg" alt="logo image" />
-      <div class="navbar">
-        <img src="assets/shared/icon-hamburger.svg" alt="menu bar" />
-        <img src="assets/shared/icon-close.svg" alt="close menu bar" />
-      </div>
-    </nav>
     <div class="homepage">
-      <a href="index.html"><button class="home-btn nav-btn">Home</button></a>
-      <a href="destination-europa.html"
-        ><button class="dest-btn nav-btn">Destination</button></a
-      >
-      <a href="crew-commander.html"
-        ><button class="crew-btn nav-btn">Crew</button></a
-      >
-      <a href="technology-capsule.html"
-        ><button class="tech-btn nav-btn">Technology</button></a
-      >
+      <nav>
+        <img src="assets/shared/logo.svg" alt="logo image" />
+        <div class="navbar">
+          <img src="assets/shared/icon-hamburger.svg" alt="menu bar" />
+          <img src="assets/shared/icon-close.svg" alt="close menu bar" />
+          <ul>
+            <li>
+              <a href="index.html"
+                ><button class="home-btn nav-btn">Home</button></a
+              >
+            </li>
+            <li>
+              <a href="destination-europa.html"
+                ><button class="dest-btn nav-btn">Destination</button></a
+              >
+            </li>
+            <li>
+              <a href="crew-commander.html"
+                ><button class="crew-btn nav-btn">Crew</button></a
+              >
+            </li>
+            <li>
+              <a href="technology-capsule.html"
+                ><button class="tech-btn nav-btn">Technology</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       <!-- 00 Home
   01 Destination
   02 Crew
   03 Technology -->
-      <p>So, you want to travel to</p>
-      <p>Space</p>
-      <p>
-        Let’s face it; if you want to go to space, you might as well genuinely
-        go to outer space and not hover kind of on the edge of it. Well sit
-        back, and relax because we’ll give you a truly out of this world
-        experience!
-      </p>
-
-      <div>Explore</div>
+      <section>
+        <div class="intro-texts">
+          <p>SO, YOU WANT TO TRAVEL TO</p>
+          <p class="big-text">SPACE</p>
+          <blockquote>
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </blockquote>
+        </div>
+        <div id="explore" class="medium-text">EXPLORE</div>
+      </section>
     </div>
   </body>
 </html>
