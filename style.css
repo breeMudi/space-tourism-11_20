@@ -151,7 +151,7 @@ blockquote {
     display: flex;
     justify-content: space-between;
 }
-.select-destination a, .select-crew a {
+.select-destination a{
     padding-bottom: 1rem;
     /* border-bottom: 2px solid var(--white-color); */
 }
@@ -185,5 +185,22 @@ blockquote {
 }
 
 .select-crew {
-    padding: 1.5rem 0 0.8rem 0rem;
+    padding: 1.8rem 0 1.8rem 0rem;
+    justify-content: center;
+    gap: 1rem;
 }
+
+.select-crew > * {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--stroke);
+    padding: 0;
+}
+
+.select-crew #one {
+    background-color: #fff;
+}
+
+/* TECHNOLOGY */
+
