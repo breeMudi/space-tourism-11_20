@@ -47,8 +47,6 @@ ul{
     position: absolute;
     display: none;
 }
-
-
 /* .navbar > img {
     position: relative;
     right: 0px;
@@ -60,7 +58,6 @@ ul{
     background-size: cover;
     height: 100vh;
     width: 100%;
-    /* border: 2px solid red; */
     position: fixed;
     z-index: -1;
 }
@@ -76,7 +73,6 @@ ul{
 
 .homepage > section > .section1 > * {
     margin-bottom: 9%;
-    /* border: 2px solid red; */
 }
 
 /* body */
@@ -147,7 +143,7 @@ blockquote {
     margin: 1rem auto 0.5rem auto;
 }
 
-.select-destination, .select-crew {
+.select-destination, .select-crew, .select-technology {
     display: flex;
     justify-content: space-between;
 }
@@ -168,7 +164,10 @@ blockquote {
 /* CREW */
 .crew .section1 > img{
     width: 12rem;
-    margin: 2rem auto 0 auto;
+}
+
+.crew .section1 > p, .technology .section1 > p{
+    margin: 0rem auto 2rem auto;
 }
 
 .crew .section2 {
@@ -179,12 +178,12 @@ blockquote {
     font-family: 'Bellefair', serif;
     opacity: var(--opacity);
 }
-.crew .section2 .medium-text{
+.crew .section2 .medium-text, .technology .section2 .medium-text{
     font-size: var(--midi-text-size);
     padding: 0.5rem 0 1rem 0;
 }
 
-.select-crew {
+.select-crew, .select-technology {
     padding: 1.8rem 0 1.8rem 0rem;
     justify-content: center;
     gap: 1rem;
@@ -202,8 +201,33 @@ blockquote {
     background-color: #fff;
 }
 
+.crew blockquote, .technology blockquote {
+    padding-bottom: 2rem;
+}
 /* TECHNOLOGY */
 
 .technology section{
     padding: 2rem 0;
+}
+.technology .section2 {
+    padding: 0 2rem;
+}
+.technology .terminology {
+    opacity: var(--opacity);
+}
+
+.select-technology > * {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--stroke);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.2rem;
+}
+
+.technology .section1 > img {
+    width: 100%;
 }
