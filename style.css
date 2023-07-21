@@ -204,3 +204,6 @@ blockquote {
 
 /* TECHNOLOGY */
 
+.technology section{
+    padding: 2rem 0;
+}
