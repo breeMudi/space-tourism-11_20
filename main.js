@@ -57,3 +57,5 @@ function changeTechnology(num, retData) {
 
 // write a function that maps various values to the dom
 // write a function that
+
+// EDITED TODAY JUL 22
