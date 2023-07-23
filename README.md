@@ -54,6 +54,8 @@ Various possible steps to achieve this project were outlined after a preliminary
 
 - I learnt how async functions really work so as to use it to access the data.json file. This JSON file contains information for the data to be loaded on individual pages.
 
+- the next step was to add event listeners to buttons for each html file
+
 Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
 1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).

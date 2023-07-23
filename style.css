@@ -122,6 +122,8 @@ blockquote {
 /* DESTINATION */
 .destination .section1 > img{
     width: 15rem;
+    height: 12rem;
+    object-fit: contain;
     margin: 2rem auto;
 }
 
@@ -163,7 +165,10 @@ blockquote {
 
 /* CREW */
 .crew .section1 > img{
-    width: 12rem;
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+    /* border: 2px solid salmon; */
 }
 
 .crew .section1 > p, .technology .section1 > p{
@@ -230,4 +235,6 @@ blockquote {
 
 .technology .section1 > img {
     width: 100%;
+    height: 12rem;
+    object-fit: contain;
 }
