@@ -1,4 +1,3 @@
-// import {dat} from './app.js'
 import getData from './app.js'
 
 
@@ -7,27 +6,30 @@ getData().then((data) => {
     console.log(retrievedData)
     // NEXT: USE DATA IN THE DIFFERENT HTML
     // But First Lets Test It
-    const selectCrew = document.querySelector('.select-crew')
+    try{const selectCrew = document.querySelector('.select-crew');
     selectCrew.addEventListener('click', (e)=>{
         console.log(((Number(e.target.className))))
         try {changeCrew(Number(e.target.className), retrievedData)}
         catch{console.log('click a button')}
-        
-    })
-    const selectDest = document.querySelector('.select-destination')
+    })}    
+    catch{console.log('not in crew')}
+
+
+    try {const selectDest = document.querySelector('.select-destination')
     selectDest.addEventListener('click', (e)=>{
         console.log(((Number(e.target.className))))
         try {changeDestination(Number(e.target.className), retrievedData)}
-        catch{console.log('click a button')}
-        
-    })
-    const selectTech = document.querySelector('.select-technology')
+        catch{console.log('click a button')}   
+    })}
+    catch{console.log('not in destination')}
+    
+    try{const selectTech = document.querySelector('.select-technology')
     selectTech.addEventListener('click', (e)=>{
         console.log(((Number(e.target.className))))
         try {changeTechnology(Number(e.target.className), retrievedData)}
-        catch{console.log('click a button')}
-        
-    })
+        catch{console.log('click a button')}     
+    })}
+    catch{console.log('not in technology')}
 })
 
 function changeCrew(num, retData) {
@@ -38,24 +40,16 @@ function changeCrew(num, retData) {
     document.getElementById('crew-bio').textContent=x.bio
 }
 function changeDestination(num, retData) {
-    const x = retData.crew[num]
+    const x = retData.destinations[num]
     document.getElementById('destination-name').textContent=x.name
     document.getElementById('destination-photo').src=x.images.png
-    document.getElementById('description').textContent=x.description
+    document.getElementById('destination-description').textContent=x.description
     document.getElementById('distance').textContent=x.distance
     document.getElementById('travel').textContent=x.travel
 }
 function changeTechnology(num, retData) {
-    const x = retData.crew[num]
+    const x = retData.technology[num]
     document.getElementById('technology-name').textContent=x.name
-    document.getElementById('technology-photo').src=x.images.png
-    document.getElementById('technology-role').textContent=x.role
-    document.getElementById('technology-bio').textContent=x.bio
+    document.getElementById('technology-photo').src=x.images.landscape
+    document.getElementById('technology-description').textContent=x.description
 }
-
-// const 
-
-// write a function that maps various values to the dom
-// write a function that
-
-// EDITED TODAY JUL 22
