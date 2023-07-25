@@ -5,3 +5,5 @@ async function getData(){
 }
 
 export default getData;
+
+// EDITED TODAY 23 JUL
