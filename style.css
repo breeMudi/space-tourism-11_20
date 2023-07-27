@@ -22,35 +22,75 @@
 body {
     color: var(--text-color);
     font-family: 'Barlow Condensed', sans-serif;
+    position: relative;
+
 }
 
-/* All navigation */
+/* NAVIGATION BAR */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    /* border: 2px solid red; */
+
 }
 
-nav > img {
+.logo {
     width: 3rem;
     height: 3rem;
 }
 
-.nav-btn {
-    color: var(--text-alt-color);
+nav .control{
+    right: 0;
+    z-index: 3;
+    position: relative;
+    right: 2rem;
 }
 
-ul{
-    list-style: none;
+nav .control img {
+    width: 1.5rem;
     position: absolute;
-    /* display: none; */
+    top: -0.5rem;
+    right: 1rem;
 }
-/* .navbar > img {
-    position: relative;
-    right: 0px;
-} */
+
+.navbar {
+    border: 2px solid green;
+    position: absolute;
+    right: 0;
+    width: 70%;
+    background-color: #000000;
+    /* z-index: 2; */
+    top: 0;
+    height: 100vh;
+    padding-top: 33%;
+    
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 15%;
+}
+
+nav span {
+    margin-right: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+nav li {
+    margin-bottom: 2.5rem;
+}
+
+nav button {
+    color: var(--white-color);
+    background-color: transparent;
+    border: none;
+}
+
+
 
 /* Background image */
 .homepage .bg, .destination .bg, .crew .bg, .technology .bg {
@@ -86,7 +126,15 @@ section {
     text-align: center;
 }
 
-p, blockquote {
+li button {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+p, li button {
+    font-size: 1.2rem;
+} 
+
+blockquote {
     font-size: var(--normal-text-size);
 }
 
