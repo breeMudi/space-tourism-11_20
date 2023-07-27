@@ -239,3 +239,17 @@ blockquote {
 .section2 a:hover {
     cursor: pointer;
 }
+
+/* INITIALIZE BUTTON COLOR */
+.select-crew #zero, .select-technology #zero {
+    background-color: var(--white-color);
+}
+
+.select-technology #zero {
+    color: var(--text-alt-color);
+}
+
+.select-destination #zero {
+    border-bottom: 2px solid var(--white-color);
+    color: var(--white-color);
+}

@@ -54,7 +54,15 @@ Various possible steps to achieve this project were outlined after a preliminary
 
 - I learnt how async functions really work so as to use it to access the data.json file. This JSON file contains information for the data to be loaded on individual pages.
 
-- the next step was to add event listeners to buttons for each html file
+- The navigation buttons for the various profile pages are given class names written as numbers from 0 to max. This was done so as to use these numbers as keys to access the json database that contains all the information
+
+- the next step was to add event listeners to buttons from each of the html page files. Upon clicking the event listeners, two functions are run. (a) a function to Reset the background color of all buttons that indicate the current profile viewed to the default neutral color (b) a function to alter the displayed data according to the button clicked. these buttons identified by their class name {number} are passed into function b as variables to adjust the current page content.
+
+- after function b has run, the target clicked button background and color properties are changed.
+
+## The next steps
+
+- Design the side navigation menu bar
 
 Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
