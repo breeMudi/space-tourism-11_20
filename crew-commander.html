@@ -23,32 +23,42 @@
     <div class="crew">
       <div class="bg"></div>
       <nav>
-        <img src="assets/shared/logo.svg" alt="logo image" />
         <div class="navbar">
-          <img src="assets/shared/icon-hamburger.svg" alt="menu bar" />
-          <img src="assets/shared/icon-close.svg" alt="close menu bar" />
           <ul>
             <li>
               <a href="index.html"
-                ><button class="home-btn nav-btn">Home</button></a
+                ><button><span>00</span> HOME</button></a
               >
             </li>
             <li>
               <a href="destination-mars.html"
-                ><button class="dest-btn nav-btn">Destination</button></a
+                ><button><span>01</span> DESTINATION</button></a
               >
             </li>
             <li>
               <a href="crew-commander.html"
-                ><button class="crew-btn nav-btn">Crew</button></a
+                ><button><span>02</span> CREW</button></a
               >
             </li>
             <li>
               <a href="technology-vehicle.html"
-                ><button class="tech-btn nav-btn">Technology</button></a
+                ><button><span>03</span> TECHNOLOGY</button></a
               >
             </li>
           </ul>
+        </div>
+        <img class="logo" src="assets/shared/logo.svg" alt="logo image" />
+        <div class="control">
+          <img
+            id="opened"
+            src="assets/shared/icon-hamburger.svg"
+            alt="menu bar"
+          />
+          <img
+            id="closed"
+            src="assets/shared/icon-close.svg"
+            alt="close menu bar"
+          />
         </div>
       </nav>
       <section id="douglas">
@@ -76,5 +86,6 @@
       </section>
     </div>
     <script type="module" src="main.js"></script>
+    <script src="nav.js"></script>
   </body>
 </html>

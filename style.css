@@ -23,18 +23,17 @@ body {
     color: var(--text-color);
     font-family: 'Barlow Condensed', sans-serif;
     position: relative;
-
+    /* border: 2px solid yellow; */
 }
 
 /* NAVIGATION BAR */
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    overflow: hidden;
     /* border: 2px solid red; */
-
 }
 
 .logo {
@@ -46,27 +45,29 @@ nav .control{
     right: 0;
     z-index: 3;
     position: relative;
-    right: 2rem;
+    /* right: 2rem; */
 }
 
 nav .control img {
     width: 1.5rem;
     position: absolute;
     top: -0.5rem;
-    right: 1rem;
+    right: -500rem;
 }
 
+/* nav #opened {
+    display: none;
+} */
+
 .navbar {
-    border: 2px solid green;
     position: absolute;
-    right: 0;
     width: 70%;
     background-color: #000000;
-    /* z-index: 2; */
+    opacity: .9;
     top: 0;
-    height: 100vh;
-    padding-top: 33%;
-    
+    right: 0;
+    height: 100%;
+    padding-top: 33%;    
 }
 
 nav ul{
@@ -89,8 +90,6 @@ nav button {
     background-color: transparent;
     border: none;
 }
-
-
 
 /* Background image */
 .homepage .bg, .destination .bg, .crew .bg, .technology .bg {
@@ -297,7 +296,7 @@ blockquote {
     color: var(--text-alt-color);
 }
 
-.select-destination #zero {
+.select-destination #zero, a:hover {
     border-bottom: 2px solid var(--white-color);
     color: var(--white-color);
 }
