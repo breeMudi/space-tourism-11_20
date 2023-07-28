@@ -23,12 +23,10 @@ body {
     color: var(--text-color);
     font-family: 'Barlow Condensed', sans-serif;
     position: relative;
-    overflow: hidden;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 /* NAVIGATION BAR */
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -36,7 +34,6 @@ nav {
     padding: 2rem;
     overflow: hidden;
     /* border: 2px solid red; */
-
 }
 
 .logo {
@@ -68,7 +65,8 @@ nav .control img {
     background-color: #000000;
     opacity: .9;
     top: 0;
-    /* height: 100vh; */
+    right: 0;
+    height: 100%;
     padding-top: 33%;    
 }
 
@@ -298,7 +296,7 @@ blockquote {
     color: var(--text-alt-color);
 }
 
-.select-destination #zero {
+.select-destination #zero, a:hover {
     border-bottom: 2px solid var(--white-color);
     color: var(--white-color);
 }
