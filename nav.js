@@ -1,12 +1,15 @@
 const withNavbar = document.getElementById('closed')
 const noNavbar = document.getElementById('opened')
-const navBar = document.querySelector('.navbar')
+const navBar = document.querySelector('ul')
 
 function reset(){
-    noNavbar.style.right = '0rem';
-    navBar.style.display= 'none'
+    if (innerWidth < 750){
+        noNavbar.style.right = '0rem';
+        navBar.style.display= 'none'
+    }   
 }
 reset()
+
 function close(){
     withNavbar.style.right = '-500rem';
     noNavbar.style.right = '0rem';
