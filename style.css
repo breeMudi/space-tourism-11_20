@@ -17,6 +17,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 body {
@@ -45,7 +46,6 @@ nav .control{
     right: 0;
     z-index: 3;
     position: relative;
-    /* right: 2rem; */
 }
 
 nav .control img {
@@ -55,11 +55,9 @@ nav .control img {
     right: -500rem;
 }
 
-/* nav #opened {
-    display: none;
-} */
-
-.navbar {
+nav ul{
+    list-style: none;
+    padding-left: 15%;
     position: absolute;
     width: 70%;
     background-color: #000000;
@@ -67,12 +65,9 @@ nav .control img {
     top: 0;
     right: 0;
     height: 100%;
-    padding-top: 33%;    
-}
-
-nav ul{
-    list-style: none;
-    padding-left: 15%;
+    padding-top: 33%;  
+    display: flex;
+    flex-direction: column; 
 }
 
 nav span {
@@ -87,7 +82,7 @@ nav li {
 
 nav button {
     color: var(--white-color);
-    background-color: transparent;
+    /* background-color: transparent; */
     border: none;
 }
 
@@ -100,10 +95,11 @@ nav button {
     position: fixed;
     z-index: -1;
 }
-  .homepage .bg {background-image: url(assets/home/background-home-mobile.jpg);}
-  .destination .bg {background-image: url(assets/destination/background-destination-mobile.jpg);}
-  .crew .bg{background-image: url(assets/crew/background-crew-mobile.jpg);}
-  .technology .bg{background-image: url(assets/technology/background-technology-mobile.jpg);}
+.homepage .bg {background-image: url(assets/home/background-home-mobile.jpg);}
+.destination .bg {background-image: url(assets/destination/background-destination-mobile.jpg);}
+.crew .bg{background-image: url(assets/crew/background-crew-mobile.jpg);}
+.technology .bg{background-image: url(assets/technology/background-technology-mobile.jpg);}
+
 
 /* homepage */
 .homepage {
@@ -120,18 +116,26 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    height: 80%;
+    height: 100%;
+}
+
+section > * {
+    margin: auto;
+}
+
+.homepage .section1, .header {
     text-align: center;
 }
-
-li button {
-    font-family: 'Barlow Condensed', sans-serif;
+.homepage section {
+    height: 80%;
 }
 
-p, li button {
-    font-size: 1.2rem;
-} 
+nav a{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25rem;
+}
 
 blockquote {
     font-size: var(--normal-text-size);
@@ -155,9 +159,9 @@ blockquote {
 }
 /* EXPLORE  */
 #explore {
-    width: 12rem;
-    height: 12rem;
-    background-color: var(--text-color);
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--white-color);
     color: var(--text-alt-color);
     display: flex;
     justify-content: center;
@@ -166,6 +170,23 @@ blockquote {
     text-decoration: none;
 }
 
+#explore > div {
+    font-size: 1.25rem;
+}
+
+/* general */
+.header {
+    color: var(--text-color);
+}
+
+.header span{
+    opacity: var(--opacity);
+    margin-right: 0.5rem;
+}
+
+.section2 {
+    text-align: center;
+}
 
 /* DESTINATION */
 .destination .section1 > img{
@@ -187,6 +208,7 @@ blockquote {
 .destination .more > div .medium-text {
    margin-top: 0.5rem;
    color: var(--white-color);
+   text-transform: uppercase;
 }
 
 .destination .section2 .big-text {
@@ -197,18 +219,12 @@ blockquote {
     display: flex;
     justify-content: space-between;
 }
+.select-destination {
+    padding: 0 15%;
+}
 .select-destination a{
     padding-bottom: 1rem;
     /* border-bottom: 2px solid var(--white-color); */
-}
-
-.header {
-    color: var(--white-color);
-}
-
-.header span{
-    opacity: var(--opacity);
-    margin-right: 0.5rem;
 }
 
 /* CREW */
@@ -219,7 +235,11 @@ blockquote {
     /* border: 2px solid salmon; */
 }
 
-.crew .section1 > p, .technology .section1 > p{
+.crew section > img {
+    display: none;
+}
+
+.crew > p, .technology > p{
     margin: 0rem auto 2rem auto;
 }
 
@@ -258,16 +278,18 @@ blockquote {
 .technology section{
     padding: 2rem 0;
 }
+
 .technology .section2 {
     padding: 0 2rem;
 }
+
 .technology .terminology {
     opacity: var(--opacity);
 }
 
 .select-technology > * {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.625rem;
+    height: 2.625rem;
     border-radius: 50%;
     border: 1px solid var(--stroke);
     padding: 0;
@@ -287,7 +309,7 @@ blockquote {
     cursor: pointer;
 }
 
-/* INITIALIZE BUTTON COLOR */
+/* INITIAL BUTTON COLORS */
 .select-crew #zero, .select-technology #zero {
     background-color: var(--white-color);
 }
@@ -296,7 +318,189 @@ blockquote {
     color: var(--text-alt-color);
 }
 
-.select-destination #zero, a:hover {
+.select-destination #zero {
     border-bottom: 2px solid var(--white-color);
     color: var(--white-color);
+}
+
+/* CONVERT TO UPPERCASE */
+#destination-name, #technology-name, #crew-name, #crew-role {
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 750px){
+
+    :root {
+        --midi-text-size: 2rem;
+    }
+    nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav .control {
+        display: none;
+    }
+
+    .logo-wrap {
+        padding: 2rem;
+    }
+
+    nav ul{
+        padding: 0rem 3rem;
+        position: static;
+        width: fit-content;
+        /* background-color: blue; */
+        opacity: .9;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        float: right;
+        gap: 3rem;
+    }
+
+    ul span {
+        display: none;
+    }
+
+    nav ul li {
+        margin-bottom: 0rem;
+        padding: 3rem 0rem;
+    }
+
+    nav ul li > a {
+        padding: 2.8rem 0rem;
+        border-bottom: 2px solid white;
+    }
+
+    /* BACKGROUND */
+    .homepage .bg {background-image: url(assets/home/background-home-tablet.jpg);}
+    .destination .bg {background-image: url(assets/destination/background-destination-tablet.jpg);}
+    .crew .bg{background-image: url(assets/crew/background-crew-tablet.jpg);}
+    .technology .bg{background-image: url(assets/technology/background-technology-tablet.jpg);}
+
+    .homepage > section > .section1 > * {
+        margin-bottom: 5%;
+    }
+    .homepage > section > .section1 {
+        width: 60%;
+    }
+
+    #explore {
+        width: 14rem;
+        height: 14rem;
+        margin-bottom: 10%;
+    }
+
+    #explore > div {
+        font-size: 2rem;
+    }
+
+    .homepage #title {
+        font-size: 9.375rem;
+        /* margin-top: 5rem; */
+    }
+
+    .homepage .header {
+        margin-top: 5rem;
+    }
+
+    .header {
+        font-size: 1.25rem;
+        letter-spacing: 0.25rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    /* destination and crew */
+    .destination .section2 {
+        max-width: 80%;
+    }
+    .crew .section2, .technology .section2 {
+        max-width: 60%;
+    }
+
+    /* DESTINATION */
+    .destination .section1 > img{
+        width: 18.75rem;
+        height: 18.75rem;
+    }
+
+    .destination .more {
+        margin-top: 2.5rem;
+        border-top: 1px solid var(--stroke);
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .destination .more > div .medium-text {
+    font-size: 2rem;
+    }
+    /* CREW */
+    .crew section {
+        height: 90vh;
+    }
+
+    .crew .section1 {
+        order: 3;
+    }
+
+    .select-crew {
+        order: 3;
+    }
+    .crew .section1 > img {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .crew > p, .technology > p{
+        margin: 0rem auto 2rem auto;
+    }
+
+    .crew .section2 {
+        border-top: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #crew-role {
+        font-size: 1.5rem;
+    }
+    .crew .section2 .medium-text, .technology .section2 .medium-text{
+        font-size: var(--midi-text-size);
+        padding: 0.5rem 0 1rem 0;
+    }
+
+    .select-crew, .select-technology {
+        padding: 1.8rem 0 1.8rem 0rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .crew blockquote, .technology blockquote {
+        padding-bottom: 2rem;
+    }
+
+    /* TECHNOLOGY */
+    .technology .header {
+        padding: 0 0 4rem 2rem;
+    }
+
+    #technology-photo {
+        height: 100%;
+    }
+    .technology .section1 {
+        margin: 0 0;
+    }
+    .select-technology > * {
+        width: 3.25rem;
+        height: 3.25rem;
+        font-size: 1.5rem;
+    }
+
+    .select-technology{
+        margin: 1.5rem 0rem;
+    }
 }
