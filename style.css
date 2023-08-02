@@ -11,6 +11,7 @@
     --big-text-size: 6rem;
 
     --opacity: 0.4;
+
     /* all font sizes for= header, image, select, dest, titlea, titleb blockquote*/
     /* phone  
     
@@ -34,7 +35,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 16px;
 }
 
 body {
