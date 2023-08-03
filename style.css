@@ -54,55 +54,6 @@ nav {
     /* border: 2px solid red; */
 }
 
-.logo {
-    width: 3rem;
-    height: 3rem;
-}
-
-nav .control{
-    right: 0;
-    z-index: 3;
-    position: relative;
-}
-
-nav .control img {
-    width: 1.5rem;
-    position: absolute;
-    top: -0.5rem;
-    right: -500rem;
-}
-
-nav ul{
-    list-style: none;
-    padding-left: 15%;
-    position: absolute;
-    width: 70%;
-    background-color: #000000;
-    opacity: .9;
-    top: 0;
-    right: 0;
-    height: 100%;
-    padding-top: 33%;  
-    display: flex;
-    flex-direction: column; 
-}
-
-nav span {
-    margin-right: 0.5rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-}
-
-nav li {
-    margin-bottom: 2.5rem;
-}
-
-nav button {
-    color: var(--white-color);
-    /* background-color: transparent; */
-    border: none;
-}
-
 /* Background image */
 .homepage .bg, .destination .bg, .crew .bg, .technology .bg {
     background-repeat: no-repeat;
@@ -112,6 +63,7 @@ nav button {
     position: fixed;
     z-index: -1;
 }
+
 .homepage .bg {background-image: url(assets/home/background-home-mobile.jpg);}
 .destination .bg {background-image: url(assets/destination/background-destination-mobile.jpg);}
 .crew .bg{background-image: url(assets/crew/background-crew-mobile.jpg);}
