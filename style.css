@@ -52,6 +52,16 @@
 .crew .bg{background-image: url(assets/crew/background-crew-mobile.jpg);}
 .technology .bg{background-image: url(assets/technology/background-technology-mobile.jpg);}
 
+.header {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+
 /* CONVERT TO UPPERCASE */
 #destination-name, #technology-name, #crew-name, #crew-role {
     text-transform: uppercase;
