@@ -61,6 +61,17 @@
     line-height: normal;
     letter-spacing: 2.7px;
 }
+ /* destination */
+ 
+.select-destination {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+}
 
 /* CONVERT TO UPPERCASE */
 #destination-name, #technology-name, #crew-name, #crew-role {
