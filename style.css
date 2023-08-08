@@ -22,8 +22,8 @@
     /* phone  
     
     select dest     14  barlow condensed     16 16
-    MOREdest 14  === barlow condensed  16   16  
-    titleaLaunch-    14 === barlow condensed  16   16 
+    dest mini-heading 14  === barlow condensed  16   16  
+    titleaLaunch= mini-heading 14 === barlow condensed  16   16 
 
     header         16  =            barlow condensed    20   28
     nav            16               barlow condensed    14   16
@@ -37,7 +37,13 @@
     space - 80              bellfair    150 S */
 }
 
-/* Background image */
+body {
+    line-height: normal;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* BACKGROUND IMAGE ON MOBILE PHONE*/
 .homepage .bg, .destination .bg, .crew .bg, .technology .bg {
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,31 +58,127 @@
 .crew .bg{background-image: url(assets/crew/background-crew-mobile.jpg);}
 .technology .bg{background-image: url(assets/technology/background-technology-mobile.jpg);}
 
+/* GENERAL PROPERTIES */
 .header {
-    color: #FFF;
-    font-family: Barlow Condensed;
+    text-align: center;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 2.7px;
 }
+
+blockquote {
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* FONT COLOR CLASSIFICATION */
+.select-destination, .destination-name, .crew-role, .crew-name, .technology-name, .distance, .travel, .header, .space
+{
+    color: #ffffff;
+}
+.mini-heading, .select-destination, blockquote {
+    color: #D0D6F9;
+}
+
+/* FONT FAMILY CLASSIFICATION */
+.select-destination, .mini-heading, .select-destination, .header {
+    font-family: 'Barlow Condensed';
+}
+.space, .destination-name, .distance, .travel, .crew-name, .technology-name, .crew-role {
+    font-family: 'Bellefair';
+}
+
+.space {
+    text-align: center;
+    font-size: 80px;
+    line-height: 100px; /* 125% */
+    letter-spacing: -0.923px;
+}
+
  /* destination */
- 
 .select-destination {
-    color: #FFF;
-    font-family: Barlow Condensed;
+    text-align: center;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 2.362px;
 }
 
+.destination-name {
+    text-align: center;
+    font-size: 56px;
+}
+
+.mini-heading, .select-destination {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2.362px;
+}
+
+.distance, .travel {
+    text-align: center;
+    font-size: 28px;
+}
+
+/* crew */
+.crew-role {
+    text-align: center;
+    font-size: 16px;
+}
+
+.crew-name, .technology-name {
+    text-align: center;
+    font-size: 24px;
+}
+
 /* CONVERT TO UPPERCASE */
-#destination-name, #technology-name, #crew-name, #crew-role {
+.destination-name, .technology-name, .crew-name, 
+.crew-role, .distance, .travel {
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 750px){
