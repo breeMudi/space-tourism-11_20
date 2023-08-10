@@ -2,8 +2,35 @@
     color: red;
 }
 
-.header {
-    padding: 20px;
+.header, .content > *, .destination-photo, .crew-photo, .technology-photo  {
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 /* destination */
+.destination-photo {
+    max-width: 170px;
+    margin-bottom: 30px;
+}
+
+.select-destination {
+    display: flex;
+    gap: 10%;
+    max-width: 500px;
+    justify-content: center;
+    margin: auto;
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    gap: 2vb;
+    padding: 3vb;
+    border-top: 2px solid #383B4B;
+}
+
+.more .mini-heading {
+   padding-bottom: 10px;
+}
+
+/* crew */
