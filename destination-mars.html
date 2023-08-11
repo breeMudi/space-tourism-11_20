@@ -17,15 +17,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css-sheets/align.css" />
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
     <div class="destination">
       <div class="bg"></div>
       <nav>
-        <div class="logo-wrap">
-          <img class="logo" src="assets/shared/logo.svg" alt="logo image" />
-        </div>
+        <img class="logo" src="assets/shared/logo.svg" alt="logo image" />
         <div class="control">
           <img
             id="opened"
@@ -43,20 +42,20 @@
             <a href="index.html"><span>00</span> HOME</a>
           </li>
           <li>
-            <a href="destination-mars.html"><span>01</span> DESTINATION</a>
+            <a href="destination.html"><span>01</span> DESTINATION</a>
           </li>
           <li>
-            <a href="crew-commander.html"><span>02</span> CREW</a>
+            <a href="crew.html"><span>02</span> CREW</a>
           </li>
           <li>
-            <a href="technology-vehicle.html"><span>03</span> TECHNOLOGY</a>
+            <a href="technology.html"><span>03</span> TECHNOLOGY</a>
           </li>
         </ul>
       </nav>
       <p class="header"><span>01</span> PICK YOUR DESTINATION</p>
       <section>
         <img
-          id="destination-photo"
+          class="destination-photo"
           src="assets/destination/image-mars.png"
           alt="Mars Image"
         />
@@ -65,20 +64,20 @@
             <a id="zero" class="0">MARS</a><a class="1">EUROPA</a
             ><a class="2">TITAN</a><a class="3">MOON</a>
           </p>
-          <p id="destination-name" class="big-text">MARS</p>
-          <blockquote id="destination-description">
+          <p class="destination-name">MARS</p>
+          <blockquote class="destination-description">
             Don’t forget to pack your hiking boots. You’ll need them to tackle
             Olympus Mons, the tallest planetary mountain in our solar system.
             It’s two and a half times the size of Everest!
           </blockquote>
           <div class="more">
             <div>
-              <p>AVG. DISTANCE</p>
-              <p id="distance" class="medium-text">225 mil. km</p>
+              <p class="mini-heading">AVG. DISTANCE</p>
+              <p class="distance">225 mil. km</p>
             </div>
             <div>
-              <p>EST. TRAVEL TIME</p>
-              <p id="travel" class="medium-text">9 months</p>
+              <p class="mini-heading">EST. TRAVEL TIME</p>
+              <p class="travel">9 months</p>
             </div>
           </div>
         </div>
