@@ -13,8 +13,10 @@ getData().then((data) => {
     selectCrew.addEventListener('click', (e)=>{
         try {
             resetBg(selectCrew)
+            // e.tartet.className = 'indicator'? 
             changeCrew(Number(e.target.className), retrievedData)
-            e.target.style.backgroundColor = '#ffffff'
+            e.target.querySelector('.indicator').style.backgroundColor = '#ffffff'
+            // e.target.style.backgroundColor = '#ffffff'
             }
         catch{}
     })}    
@@ -53,34 +55,35 @@ getData().then((data) => {
 // Updating functions
 function changeCrew(num, retData) {
     const x = retData.crew[num]
-    document.getElementById('crew-name').textContent=x.name
-    document.getElementById('crew-photo').src=x.images.png
-    document.getElementById('crew-role').textContent=x.role
-    document.getElementById('crew-bio').textContent=x.bio
+    document.querySelector('.crew-name').textContent=x.name
+    document.querySelector('.crew-photo').src=x.images.png
+    document.querySelector('.crew-role').textContent=x.role
+    document.querySelector('.crew-bio').textContent=x.bio
 }
 function changeDestination(num, retData) {
     const x = retData.destinations[num]
-    document.getElementById('destination-name').textContent=x.name
-    document.getElementById('destination-photo').src=x.images.png
-    document.getElementById('destination-description').textContent=x.description
-    document.getElementById('distance').textContent=x.distance
-    document.getElementById('travel').textContent=x.travel
+    document.querySelector('.destination-name').textContent=x.name
+    document.querySelector('.destination-photo').src=x.images.png
+    document.querySelector('.destination-description').textContent=x.description
+    document.querySelector('.distance').textContent=x.distance
+    document.querySelector('.travel').textContent=x.travel
 }
 function changeTechnology(num, retData) {
     const x = retData.technology[num]
-    document.getElementById('technology-name').textContent=x.name
-    document.getElementById('technology-photo').src=x.images.landscape
-    document.getElementById('technology-description').textContent=x.description
+    document.querySelector('.technology-name').textContent=x.name
+    document.querySelector('.technology-photo').src=x.images.landscape
+    document.querySelector('.technology-description').textContent=x.description
 }
 
 // RESET PAGE INDICATION FUNCTIONS
 function resetBg (selectList){
     const nodes = selectList.childNodes
     nodes.forEach((e) => {
-        try{e.style.backgroundColor = '#97979795'}
+        try{e.querySelector('.indicator').style.backgroundColor = '#97979795'}
         catch{'what happened'}
     });
 }
+
 // tech text color 0B0D17...fill white,, border none on click
 // else text color whit...fill transparent, border '#97979795'
 function resetTechBg (selectList){
