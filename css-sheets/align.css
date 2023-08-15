@@ -26,6 +26,9 @@
     margin: auto;
 }
 
+.select-destination > * {
+    padding-bottom: 15px;
+}
 .more {
     display: flex;
     flex-direction: column;
@@ -107,6 +110,8 @@
     /* padding-bottom: 0.2rem; */
     color: #ffffff;
 }
+
+/* IPAD */
 
 
 
