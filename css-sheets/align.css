@@ -6,6 +6,11 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
+.content, section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .content > *{
     margin-bottom: 10px;
     margin-top: 10px;
@@ -113,5 +118,15 @@
 
 /* IPAD */
 
-
-
+@media (min-width:450px){
+    .crew-photo {
+        height: 572px;
+        border-bottom: none;
+    }
+    .select-crew {
+        order: 2;
+    }
+    .crew section {
+        flex-direction: column-reverse;
+    }
+}
