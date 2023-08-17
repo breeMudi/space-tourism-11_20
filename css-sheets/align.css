@@ -129,4 +129,10 @@
     .crew section {
         flex-direction: column-reverse;
     }
+    
+    .header {
+        text-align: left;
+        margin-left: 50px;
+    }
 }
+
