@@ -17,30 +17,13 @@
     --big-text-size: 6rem;
 
     --opacity: 0.4;
-
-    /* all font sizes for= header, image, select, dest, titlea, titleb blockquote*/
-    /* phone  
-    
-    select dest     14  barlow condensed     16 16
-    dest mini-heading 14  === barlow condensed  16   16  
-    titleaLaunch= mini-heading 14 === barlow condensed  16   16 
-
-    header         16  =            barlow condensed    20   28
-    nav            16               barlow condensed    14   16
-    blockquote     15 - barlow  16  18
-
-    titleaCrew = 16         bellfair    24  32
-    explore = 20            bellfair    32  S
-    titleb 24  =            bellfair    40  56
-    values in dest = 28     bellfair    28  S
-    dest 56       =         bellfair    80  100
-    space - 80              bellfair    150 S */
 }
 
 body {
     line-height: normal;
     font-weight: 400;
     font-style: normal;
+    position: relative;
 }
 
 /* BACKGROUND IMAGE ON MOBILE PHONE*/
@@ -58,7 +41,7 @@ body {
 .crew .bg{background-image: url(assets/crew/background-crew-mobile.jpg);}
 .technology .bg{background-image: url(assets/technology/background-technology-mobile.jpg);}
 
-/* GENERAL PROPERTIES */
+/* GENERAL PROPERTIES THAT CHANGE WITH SCREEN SIZE */
 .header {
     text-align: center;
     font-size: 16px;
@@ -89,6 +72,25 @@ blockquote {
     font-family: 'Bellefair';
 }
 
+nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    list-style: none;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.content {
+    width: 80%;
+    align-self: center;
+}
+
+/* OTHER PROPERTIES THAT CHANGE WITH SCREEN SIZE */
 .space {
     text-align: center;
     font-size: 80px;
@@ -97,6 +99,11 @@ blockquote {
 }
 
  /* destination */
+ .destination-photo{
+    width: 291px;
+    align-self: center;
+ }
+
 .select-destination {
     text-align: center;
     font-size: 14px;
@@ -137,54 +144,88 @@ blockquote {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 750px){
     /* BACKGROUND */
     .homepage .bg {background-image: url(assets/home/background-home-tablet.jpg);}
     .destination .bg {background-image: url(assets/destination/background-destination-tablet.jpg);}
     .crew .bg{background-image: url(assets/crew/background-crew-tablet.jpg);}
     .technology .bg{background-image: url(assets/technology/background-technology-tablet.jpg);}
+
+    /* GENERAL PROPERTIES THAT CHANGE WITH SCREEN SIZE */
+    .header {
+        text-align: left;
+        font-size: 20px;
+        letter-spacing: 3.375px;
+    }
+    
+    blockquote {
+        margin: auto;
+        font-size: 16px;
+        line-height: 28px;
+        width: 70%;
+    }
+
+    .destination blockquote {
+        width: 90%;
+    }
+
+    /* OTHER PROPERTIES THAT CHANGE WITH SCREEN SIZE */
+    .space {
+        font-size: 150px;
+        line-height: 150px; /* 125% */
+    }
+
+    /* destination */
+    .destination-photo{
+        width: 457px;
+    }
+
+    .select-destination {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .destination-name {
+        font-size: 80px;
+    }
+
+    /* .mini-heading, .select-destination {
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 2.362px;
+    } */
+
+    /* .distance, .travel {
+        text-align: center;
+        font-size: 28px;
+    } */
+
+    /* crew */
+    .crew-role {
+        font-size: 24px;
+    }
+
+    .crew-name, .technology-name {
+        font-size: 40px;
+    }
+
 }
+
+
+    /* all font sizes for= header, image, select, dest, titlea, titleb blockquote*/
+    /* phone  
+    
+    select dest     14  barlow condensed     16 16
+    dest mini-heading 14  === barlow condensed  16   16  
+    titleaLaunch= mini-heading 14 === barlow condensed  16   16 
+
+    header         16  =            barlow condensed    20   28
+    nav            16               barlow condensed    14   16
+    blockquote     15 - barlow  16  18
+
+    titleaCrew = 16         bellfair    24  32
+    explore = 20            bellfair    32  S
+    titleb 24  =            bellfair    40  56
+    values in dest = 28     bellfair    28  S
+    dest 56       =         bellfair    80  100
+    space - 80              bellfair    150 S */
