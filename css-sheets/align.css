@@ -118,7 +118,7 @@
 
 /* IPAD */
 
-@media (min-width:450px){
+@media (min-width:750px){
     .crew-photo {
         height: 572px;
         border-bottom: none;
@@ -144,6 +144,43 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
 }
 
+/* LAPTOP */
+
+@media (min-width:900px){
+    section {
+        flex-direction: row;
+        /* position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); */
+        margin: auto;
+        height: 80vh;
+    }
+    
+    .content > *{
+        justify-content: left;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 20%;
+    }
+    .technology section, .crew section {
+        flex-direction: row-reverse;
+    }
+
+    .more {
+        padding-left: 0;
+        text-align: left;
+        gap: 10%;
+    }
+        .more > * > * {
+        text-align: left;
+    }
+
+    .header {
+        margin-left: 0;
+        padding-left: 10%;
+    }
+}
