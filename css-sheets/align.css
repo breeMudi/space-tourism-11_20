@@ -156,7 +156,7 @@
         top: 50%;
         transform: translate(-50%, -50%); */
         margin: auto;
-        height: 80vh;
+        height: 100vh;
     }
     
     .content > *{
